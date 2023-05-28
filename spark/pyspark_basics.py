@@ -118,3 +118,24 @@ df.show(10)
 
 df.filter(('longitude=-121.44') and ('latitude=38.43'))
 
+## writes 
+
+data.write.option('header',True).csv("/content/housing2.csv")
+
+## get number of partitions
+print(data.rdd.getNumPartitions)
+
+# using save
+data.write.save("/content/housing3.csv",format='csv',mode='overwrite',header=True)
+
+## save as parquet
+data.write.save("/content/housing3.parquet",format='parquet',mode='overwrite',header=True)
+
+## save as table
+data.write.mode('ignore').saveAsTable("housing")
+
+spark.catalog.listTables()
+
+## using spark sql 
+spark.sql("SELECT * FROM housing ORDER BY total_rooms DESC limit 10")
+
