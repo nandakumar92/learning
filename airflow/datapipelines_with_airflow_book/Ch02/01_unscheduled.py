@@ -18,7 +18,7 @@ fetch_events=BashOperator(
      "curl -o /data/events.json http://events_api:5000/events"
     ),
     dag=dag
-)
+) 
 
 def _calculate_stats(input_path,output_path):
 
