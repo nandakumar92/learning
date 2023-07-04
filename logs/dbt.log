@@ -1,0 +1,9 @@
+[0m14:26:11.401127 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1113b4fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1113bae10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1113bb3d0>]}
+
+
+============================== 14:26:11.404184 | eee97474-34e0-441d-801e-3fe33b486cb3 ==============================
+[0m14:26:11.404184 [info ] [MainThread]: Running with dbt=1.5.2
+[0m14:26:11.404692 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/nandakumarudayakumar/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:26:11.405072 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/Users/nandakumarudayakumar/.dbt')}
+[0m14:26:11.405407 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m14:26:11.406566 [debug] [MainThread]: Starter project path: /opt/homebrew/lib/python3.11/site-packages/dbt/include/starter_project
